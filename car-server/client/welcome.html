@@ -1,0 +1,18 @@
+<head>
+<script src="http://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+</head>
+<body>
+<a href="#" onclick="send('start');return false;">start</a>
+<a href="#" onclick="send('stop');return false;">stop</a>
+<a href="#" onclick="send('forward');return false;">forward</a>
+<a href="#" onclick="send('backward');return false;">backward</a>
+<a href="#" onclick="send('left');return false;">left</a>
+<a href="#" onclick="send('right');return false;">right</a>
+<a href="#" onclick="send('pause');return false;">pause</a>
+<script>
+function send(command){
+  $.get("/"+command,function(){});
+}
+</script>
+</body>
+
