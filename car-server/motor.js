@@ -25,7 +25,7 @@ function right_forward(){
     rpio.write(pins[1],rpio.LOW);
 }
 
-var car = {
+var motor = {
     "forward": function(){
         left_forward();
         right_forward();
@@ -59,4 +59,4 @@ var car = {
     }
 };
 
-module.exports = car;
+module.exports = motor;
