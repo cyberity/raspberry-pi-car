@@ -17,7 +17,7 @@ server.listen(port, function () {
 io.on('connection', function (socket) {
 
   socket.on('motor', function (data) {
-      motor[data.dir]();
+      motor[data]();
   });
   // when the user disconnects.. perform this
   socket.on('disconnect', function () {
